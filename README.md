@@ -18,9 +18,9 @@ Running *combined_method_with_vs_without_outliers.py* with *filtered=True* creat
 
 *process_data_for_contact_matrix.py* creates *data_for_matrix_plots.p*. Takes a few seconds.\
 
-*process_data_for_contact_distribution* creates *data_for_contact_distribution_plots.p*. Takes a few seconds.\
+*process_data_for_contact_distribution.py* creates *data_for_contact_distribution_plots.p*. Takes a few seconds.\
 
-*four_methods_applied_to_survey_data* creates *data_for_R0_bootsrap_plots.p*. Takes around five minutes. \
+*four_methods_applied_to_survey_data.py* creates *data_for_R0_bootsrap_plots.p*. Takes around five minutes. \
 
 *plot_figure2.py* requires *data_for_matrix_plots.p*, *data_for_contact_distribution_plots.p*, *data_for_R0_bootsrap_plots.p*. Takes a few seconds.\
 

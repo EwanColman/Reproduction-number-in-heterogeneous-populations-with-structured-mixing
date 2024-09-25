@@ -28,7 +28,7 @@ ax=fig.add_subplot(gs[0,0])
 plt.text(-0.15,1,'A',backgroundcolor='w',size=20, transform=ax.transAxes)
 
 
-plt.title('$\\bf{Wave~'+str(wave)+'}$, '+plot_data[wave]['from']+' to '+plot_data[wave]['to'])
+plt.title('$\\bf{High~stringency}$, '+plot_data[wave]['from']+' to '+plot_data[wave]['to'])
 colors=plt.cm.Paired(np.linspace(0, 1, 12))
 # start at the bottom
 #bottom=[0 for i in range(10)]
@@ -56,7 +56,7 @@ ax=fig.add_subplot(gs[2,0])
 
 plt.text(-0.15,1,'C',backgroundcolor='w',size=20, transform=ax.transAxes)
 
-plt.title('$\\bf{Wave~'+str(wave)+'}$, '+plot_data[wave]['from']+' to '+plot_data[wave]['to'])
+plt.title('$\\bf{Low~stringency}$, '+plot_data[wave]['from']+' to '+plot_data[wave]['to'])
 colors=plt.cm.Paired(np.linspace(0, 1, 12))
 # start at the bottom
 #bottom=[0 for i in range(10)]
@@ -175,14 +175,14 @@ y=0.6
 for x in [1+y,2+y,3+y]:
     plt.axhline(x,linestyle=':',linewidth=0.5,color='k')
 plt.ylim([y,4+y])
-plt.yticks([4+z,4-z,3+z,3-z,2+z,2-z,1+z,1-z],['20','21','20','21','20','21','20','21'])
+plt.yticks([4+z,4-z,3+z,3-z,2+z,2-z,1+z,1-z],['High\nstringency','Low\nstringency','High\nstringency','Low\nstringency','High\nstringency','Low\nstringency','High\nstringency','Low\nstringency'])
 
 
 i=0
 for model in lstyle.keys():
     i=i+1
     plt.text(0.5,5-i+3*z,model)
-    plt.text(-0.9,5.25-i,'Wave')#,rotation=90)
+    #plt.text(-0.9,5.25-i,'Wave')#,rotation=90)
 #plt.xticks([i-0.3 for i in range(1,5)],lstyle.keys(),rotation=60)
 #plt.legend(title='$\\bf{Model~assumptions:}$                         ',bbox_to_anchor=(0.7, -0.3))
 plt.savefig('../figures/figure3.png',format='png',dpi=300,bbox_inches='tight')
